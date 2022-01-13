@@ -14,7 +14,7 @@ namespace Calculator_App
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
