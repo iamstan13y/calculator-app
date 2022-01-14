@@ -1,8 +1,5 @@
-﻿using Calculator_App.Services;
-using Calculator_App.Views;
-using System;
+﻿using Calculator_App.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Calculator_App
 {
@@ -13,7 +10,6 @@ namespace Calculator_App
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
 
