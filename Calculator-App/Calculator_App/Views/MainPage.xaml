@@ -4,12 +4,17 @@
              x:Class="Calculator_App.Views.MainPage">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Frame BackgroundColor="WhiteSmoke"
-                   Padding="15" Margin="0,0,0,20">
+            <Frame BackgroundColor="LightSteelBlue"
+                   Padding="0" Margin="0,0,0,-10">
                 <Label x:Name="lblResult"
                     Text="0"
-                       FontSize="40"
-                       
+                       FontSize="47"   
+                       HorizontalOptions="Start"
+                       ></Label>
+            </Frame>
+            <Frame BackgroundColor="LightSteelBlue">
+                <Label x:Name="lblOperator"
+                       FontSize="22"
                        HorizontalOptions="End"
                        ></Label>
             </Frame>
@@ -33,7 +38,7 @@
                     Grid.Column="0"
                     Text="C"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnClear"
                     Clicked="BtnClear_Clicked"/>
@@ -41,7 +46,7 @@
                     Grid.Column="1"
                     Text="X"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnBackSpace"
                     Clicked="BtnBackSpace_Clicked"/>
@@ -49,7 +54,7 @@
                     Grid.Column="2"
                     Text="%"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnPercent"
                     Clicked="BtnPercent_Clicked"/>
@@ -57,7 +62,7 @@
                     Grid.Column="3"
                     Text="÷"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnDivide"
                     Clicked="BtnOperation_Clicked"/>
@@ -67,7 +72,7 @@
                     Grid.Column="0"
                     Text="1"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnOne"
                     Clicked="ButtonClick"/>
@@ -75,7 +80,7 @@
                     Grid.Column="1"
                     Text="2"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnTwo"
                     Clicked="ButtonClick"/>
@@ -83,7 +88,7 @@
                     Grid.Column="2"
                     Text="3"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnThree"
                     Clicked="ButtonClick"/>
@@ -91,7 +96,7 @@
                     Grid.Column="3"
                     Text="×"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnTimes"
                     Clicked="BtnOperation_Clicked"/>
@@ -101,7 +106,7 @@
                     Grid.Column="0"
                     Text="4"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnFour"
                     Clicked="ButtonClick"/>
@@ -109,7 +114,7 @@
                     Grid.Column="1"
                     Text="5"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnFive"
                     Clicked="ButtonClick"/>
@@ -117,14 +122,14 @@
                     Grid.Column="2"
                     Text="6"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnSix"
                     Clicked="ButtonClick"/>
                 <Button Grid.Row="2"
                     Grid.Column="3"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     Text="-"
                     x:Name="btnMinus"
                     Clicked="BtnOperation_Clicked"/>
@@ -134,7 +139,7 @@
                     Grid.Column="0"
                     Text="7"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnSeven"
                     Clicked="ButtonClick"/>
@@ -142,7 +147,7 @@
                     Grid.Column="1"
                     Text="8"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnEight"
                     Clicked="ButtonClick"/>
@@ -150,7 +155,7 @@
                     Grid.Column="2"
                     Text="9"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnNine"
                     Clicked="ButtonClick"/>
@@ -158,7 +163,7 @@
                     Grid.Column="3"
                     Grid.RowSpan="2"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     Text="+"
                     x:Name="btnPlus"
                     Clicked="BtnOperation_Clicked"/>
@@ -168,7 +173,7 @@
                     Grid.Column="0"
                     Text="."
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnDot"
                     Clicked="ButtonClick"/>
@@ -176,7 +181,7 @@
                     Grid.Column="1"
                     Text="0"
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnZero"
                     Clicked="ButtonClick"/>
@@ -184,7 +189,7 @@
                     Grid.Column="2"
                     Text="="
                     FontSize="Medium"
-                    Padding="30"
+                    Padding="25"
                     FontAttributes="Bold"
                     x:Name="btnEqual"
                     Clicked="BtnEqual_Clicked"/>

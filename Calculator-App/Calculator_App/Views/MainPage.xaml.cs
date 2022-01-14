@@ -42,6 +42,7 @@ namespace Calculator_App.Views
         {
             lblResult.Text = "0";
             firstNumber = 0;
+            lblOperator.Text = "";
         }
 
         private void BtnBackSpace_Clicked(object sender, EventArgs e)
@@ -63,11 +64,14 @@ namespace Calculator_App.Views
             var button = sender as Button;
             operatorClicked = true;
             operatorName = button.Text;
+            lblOperator.Text = operatorName;
             firstNumber = decimal.Parse(lblResult.Text);
         }
 
         private async void BtnPercent_Clicked(object sender, EventArgs e)
         {
+            lblOperator.Text = "";
+
             try
             {
                 string number = lblResult.Text;
@@ -91,6 +95,7 @@ namespace Calculator_App.Views
             {
                 decimal secondNumber = decimal.Parse(lblResult.Text);
                 string result = Calculate(firstNumber, secondNumber).ToString();
+                lblOperator.Text = "";
                 lblResult.Text = result;
             }
             catch (Exception ex)
